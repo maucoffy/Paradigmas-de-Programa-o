@@ -18,11 +18,11 @@ cont list = length(list) - length(filter(/=' ')list)
 calc :: [Int] -> [Int]
 calc list = map(\n -> 3*n^2 + div 2 n + 1) list
 
--- 6)
+-- 6) Escreva uma função que, dada uma lista de números, selecione somente os que forem negativos.
 neg :: [Int] -> [Int]
 neg x = filter(< 0)x
 
--- 7)
+-- 7) Escreva uma função que receba uma lista de números e retorne somente os que estiverem entre 1 e 100, inclusive. Dica 1: use uma função anônima. Dica 2: use o operador '&&' para expressar um 'E' lógico.
 sel :: [Int] -> [Int]
 sel list = filter(\n -> n >= 1 && n <= 100)list
 
