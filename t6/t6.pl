@@ -25,7 +25,7 @@ zipmult(L1,L2,L3) :-
 	L2 = [H2|T2]
 	L3 = [H3|T3]
 	H3 is H1 * H2, 
-	ziplus(T1,T2,T3).
+	zimult(T1,T2,T3).
 
 potencias(N,L) :- 
 	potencias_aux(N,0,L).
